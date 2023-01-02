@@ -90,6 +90,16 @@ body{
     background-color: black;
     color: black;
 }
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 12px auto;
+    background: black;
+    width: fit-content;
+    color: white;
+    padding: 5px 30px;
+}
 /* ============header=================== */
 
 .header{
@@ -99,7 +109,6 @@ body{
 }
 
 .priority-container{
-    background-color: lightpink;
     padding: .5em;
     height: 3rem;
     width: 40%;
@@ -109,14 +118,18 @@ body{
 .task-button{
     padding: 0.8em;
     width: 100%;
-    font-size: 1rem;
-    background-color: green;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(0, 11, 0);
     border: none;
     cursor: pointer;
 }
 .priority-color-small{
     height: 2rem;
     width: 20%;
+    /* border-radius: 40px; */
 }
 .priority-container>*{
     margin-left: 0.5em;
@@ -137,6 +150,7 @@ body{
     left: calc((100vw - var(--modal-width))/2);
     display: none;
     z-index: 1;
+    border: 4px solid black;
 }
 .text-area{
     height: 100%;
@@ -149,7 +163,7 @@ body{
     font-size: 1.5rem;
 }
 .priority-colors{
-    background-color: chartreuse;
+    background-color: rgb(255, 206, 213);
     height: 100%;
     width: 30%;
     flex-direction: column;
@@ -162,6 +176,7 @@ body{
 
 }
 .priority-color-big{
+    border-radius: 20px;
     height: 15%;
     width: 50%;
 }
@@ -177,10 +192,14 @@ body{
 .done-btn{
     position: absolute;
     display: inline-block;
-    bottom: 0;
+    width: 100px;
+    bottom: 12px;
     left: 35%;
-    padding: 0.6em 1em;
-    background-color: green;
+    padding: 0.9em 1em;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgb(4, 12, 4);
+    color: white;
     border: none;
     cursor: pointer;
 }
@@ -196,12 +215,14 @@ body{
 .task-item{
     height: 12rem;
     width: 30%;
+    border-radius: 10px;
     background-color: lightblue;
     position: relative;
     
 }
 .priority-task{
     height: 10%;
+    border-radius: 11.5px;
     text-align: center;
 }
 .task{
@@ -220,10 +241,6 @@ body{
     display: none;
     justify-content: space-between;
 }
-/* .task-item:hover{
-    
-    font-size: 2.8rem;
-} */
 .completed{
     color: green;
 }
@@ -241,4 +258,7 @@ body{
     bottom: 5px;
     font-size: 1.2rem;
     cursor: pointer;
+}
+.blur {
+    filter: blur(3px);
 }
